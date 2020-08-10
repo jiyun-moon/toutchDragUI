@@ -1,0 +1,46 @@
+body {
+  background-color: cornsilk;
+}
+div {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 60px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul > li {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  line-height: 90px;
+  text-align: center;
+  color:#fff;
+  font-size: 2.7em;
+  font-family: monospace;
+  font-weight: bold;
+  border-radius: 5%;
+  text-shadow: #3f5988d4 -2px -1px 0;
+}
+ul > li.drag-down{
+  box-shadow: inset rgb(49 49 68) 0 0 10px 0px;
+}
+ul > li.drag-up{
+  opacity: 0.6;
+  box-shadow: rgb(0 0 0 / 72%) 0 0 8px 1px;
+  position: absolute;
+  pointer-events: none;
+  margin-left: -45px;
+  margin-top: -45px;
+}
+.keeper{
+  background-color: rgba(0, 0, 0, 0.1);
+  text-shadow: none;
+  color: rgb(128, 167, 240);
+}
+.animatable {
+  transition: transform linear 400ms, opacity linear 400ms;
+}
